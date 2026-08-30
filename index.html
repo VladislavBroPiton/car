@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ПЕРЕГОН — авто с аукционов США под ключ</title>
+    <meta
+      name="description"
+      content="Выкупаем автомобили на Copart и IAAI, доставляем и растаможиваем. Полная смета до торгов: конечная цена в рублях известна заранее."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Golos+Text:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin>(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=document.getElementById(`hero`),t=document.getElementById(`intro`),n=document.getElementById(`skip`),r=`peregon:intro-seen`;function i(){if(e.dataset.stage!==`revealed`){e.dataset.stage=`revealed`;try{sessionStorage.setItem(r,`1`)}catch{}}}function a(){e.dataset.intro=`off`,t.pause(),i()}function o(){let e=window.matchMedia(`(prefers-reduced-motion: reduce)`).matches,t=navigator.connection,n=t&&(t.saveData||/^(slow-)?2g$/.test(t.effectiveType||``)),i=!1;try{i=sessionStorage.getItem(r)===`1`}catch{i=!1}return e||n||i}if(o())a();else{t.addEventListener(`ended`,i,{once:!0}),t.addEventListener(`error`,a,{once:!0});let e=setTimeout(a,12e3);t.addEventListener(`ended`,()=>clearTimeout(e),{once:!0});let n=t.play();n&&typeof n.catch==`function`&&n.catch(a)}n.addEventListener(`click`,a);var s=document.querySelectorAll(`.reveal`);if(window.matchMedia(`(prefers-reduced-motion: reduce)`).matches)s.forEach(e=>e.classList.add(`is-in`));else{let e=new IntersectionObserver(t=>{t.forEach(t=>{t.isIntersecting&&(t.target.classList.add(`is-in`),e.unobserve(t.target))})},{rootMargin:`0px 0px -12% 0px`,threshold:.12});s.forEach(t=>e.observe(t))}var c={lot:.5,ship:.16,customs:.27,fee:.07},l=new Intl.NumberFormat(`ru-RU`,{style:`currency`,currency:`RUB`,maximumFractionDigits:0}),u=document.querySelectorAll(`.chip`),d=document.querySelectorAll(`[data-row]`);function f(e){let t={lot:e*c.lot,ship:e*c.ship,customs:e*c.customs,fee:e*c.fee,total:e};d.forEach(e=>{e.textContent=l.format(Math.round(t[e.dataset.row]/1e3)*1e3)})}u.forEach(e=>{e.addEventListener(`click`,()=>{u.forEach(t=>t.classList.toggle(`is-active`,t===e)),f(Number(e.dataset.budget))})}),u.length&&f(Number(document.querySelector(`.chip.is-active`).dataset.budget));var p=document.getElementById(`lead`),m=document.getElementById(`toast`),h=document.getElementById(`toast-close`);p.addEventListener(`submit`,e=>{e.preventDefault(),p.reportValidity()&&(p.reset(),m.hidden=!1,h.focus())}),h.addEventListener(`click`,()=>{m.hidden=!0});</script>
+    <style rel="stylesheet" crossorigin>:root{--ground:#08090a;--ink:#f2f3f4;--ink-dim:#9aa0a4;--accent:#c8452d;--line:#f2f3f424}*{box-sizing:border-box}html,body{height:100%}body{background:var(--ground);color:var(--ink);-webkit-font-smoothing:antialiased;margin:0;font-family:Golos Text,Segoe UI,system-ui,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}.hero{grid-template-rows:auto 1fr auto;min-height:100dvh;padding:clamp(18px,3vh,28px) clamp(20px,5vw,64px) clamp(20px,3.4vh,32px);display:grid;position:relative;overflow:hidden}.hero__media{z-index:0;background:#0a0b0c url(./media/end.jpg) 50%/cover no-repeat;position:absolute;inset:0}.hero__media:after{content:"";background:linear-gradient(to right, #08090aeb 0%, #08090a59 46%, transparent 70%), linear-gradient(to top, var(--ground) 2%, transparent 38%);opacity:0;transition:opacity .9s .15s;position:absolute;inset:0}.hero[data-stage=revealed] .hero__media:after{opacity:1}.hero__video{object-fit:cover;object-position:58% center;width:100%;height:100%;display:block}.hero[data-intro=off] .hero__video{display:none}.bar,.hero__content,.hero__facts{z-index:1;position:relative}.bar{align-items:center;gap:24px;display:flex}.mark{letter-spacing:.22em;font-family:Oswald,Golos Text,sans-serif;font-size:19px;font-weight:600}.nav{color:var(--ink-dim);opacity:0;pointer-events:none;gap:28px;margin-left:auto;font-size:14px;transition:opacity .7s .25s;display:flex}.hero[data-stage=revealed] .nav{opacity:1;pointer-events:auto}.nav a{padding-bottom:3px;transition:color .25s;position:relative}.nav a:after{content:"";background:var(--accent);transform-origin:0;height:1px;transition:transform .35s cubic-bezier(.2,.7,.2,1);position:absolute;bottom:0;left:0;right:0;transform:scaleX(0)}.nav a:hover,.nav a:focus-visible{color:var(--ink)}.nav a:hover:after,.nav a:focus-visible:after{transform:scaleX(1)}.skip{border:1px solid var(--line);color:var(--ink-dim);font:inherit;cursor:pointer;background:0 0;border-radius:2px;margin-left:auto;padding:7px 16px;font-size:13px;transition:color .25s,border-color .25s}.skip:hover,.skip:focus-visible{color:var(--ink);border-color:var(--ink-dim)}.hero[data-stage=revealed] .skip{display:none}.hero__content,.hero__facts{opacity:0;transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1);transform:translateY(14px)}.hero[data-stage=revealed] .hero__content{opacity:1;transform:none}.hero[data-stage=revealed] .hero__facts{opacity:1;transition-delay:.18s;transform:none}.hero__content{align-self:center;max-width:54ch;padding:clamp(12px,2vh,28px) 0}h1{text-transform:uppercase;letter-spacing:-.005em;text-wrap:balance;max-width:14ch;margin:0 0 clamp(14px,2.4vh,22px);font-family:Oswald,Golos Text,sans-serif;font-size:clamp(30px,5.4vh,54px);font-weight:500;line-height:1.04}.hero__sub{max-width:44ch;color:var(--ink-dim);margin:0 0 clamp(18px,3vh,28px);font-size:clamp(15px,1.35vw,17px);line-height:1.55}.hero__actions{flex-wrap:wrap;gap:12px;display:flex}.btn{background:var(--accent);color:#fff;border:1px solid var(--accent);border-radius:2px;justify-content:center;align-items:center;padding:15px 28px;font-size:15px;font-weight:500;transition:background .25s,border-color .25s,color .25s;display:inline-flex}.btn:hover,.btn:focus-visible{background:#a8371f;border-color:#a8371f}.btn--ghost{color:var(--ink);border-color:var(--line);background:0 0}.btn--ghost:hover,.btn--ghost:focus-visible{border-color:var(--ink-dim);background:0 0}:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.hero__facts{border-top:1px solid var(--line);flex-wrap:wrap;gap:clamp(24px,5vw,64px);padding-top:20px;display:flex}.hero__facts div{flex-direction:column;gap:3px;max-width:26ch;display:flex}.hero__facts b{font-variant-numeric:tabular-nums;font-family:Oswald,sans-serif;font-size:24px;font-weight:500}.hero__facts span{color:var(--ink-dim);font-size:13px;line-height:1.4}@media (width<=900px){.nav{display:none}.hero__video,.hero__media{object-position:62% center}.hero__media:after{background:linear-gradient(to top, var(--ground) 34%, #08090a8c 62%, transparent 88%)}.hero__content{align-self:end;max-width:none}h1{font-size:clamp(30px,8vw,40px)}.hero__sub{max-width:none}.hero__actions{flex-direction:column}.btn{width:100%}.hero__facts{gap:14px}.hero__facts div{flex-direction:row;align-items:baseline;gap:10px;max-width:none}.hero__facts b{min-width:72px;font-size:18px}.hero__facts span{font-size:12px}}@media (prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;animation-duration:.01ms!important}}.section{padding:clamp(64px,9vw,128px) clamp(20px,5vw,64px)}.section--tint{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0c0e10}.wrap{max-width:1180px;margin:0 auto}.wrap--narrow{max-width:760px}.head{max-width:44ch;margin:0 0 clamp(36px,5vw,64px)}.eyebrow{letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 14px;font-family:Oswald,sans-serif;font-size:13px}h2{text-transform:uppercase;text-wrap:balance;margin:0;font-family:Oswald,Golos Text,sans-serif;font-size:clamp(26px,3.4vw,42px);font-weight:500;line-height:1.1}.head__sub{color:var(--ink-dim);margin:16px 0 0;font-size:16px;line-height:1.6}.reveal{opacity:0;transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1);transform:translateY(18px)}.reveal.is-in{opacity:1;transform:none}.steps{gap:0;margin:0;padding:0;list-style:none;display:grid}.step{border-top:1px solid var(--line);grid-template-columns:96px 1fr;gap:clamp(16px,4vw,40px);padding:clamp(24px,3vw,34px) 0;display:grid}.step:last-child{border-bottom:1px solid var(--line)}.step__num{color:var(--accent);font-variant-numeric:tabular-nums;font-family:Oswald,sans-serif;font-size:clamp(30px,3.6vw,44px);line-height:1}.step__when{letter-spacing:.06em;text-transform:uppercase;color:var(--ink-dim);margin:0 0 6px;font-size:13px}.step h3{text-transform:uppercase;margin:0 0 10px;font-family:Oswald,sans-serif;font-size:clamp(19px,2vw,24px);font-weight:500}.step p{max-width:62ch;color:var(--ink-dim);margin:0;line-height:1.62}.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;display:grid}.card{border:1px solid var(--line);background:#101315;padding:26px 24px}.card h3{text-transform:uppercase;margin:0 0 10px;font-family:Oswald,sans-serif;font-size:19px;font-weight:500}.card p{color:var(--ink-dim);margin:0;font-size:15px;line-height:1.6}.cases{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;display:grid}.case{border:1px solid var(--line);padding:26px 24px;transition:border-color .3s,transform .3s}.case:hover{border-color:#f2f3f452;transform:translateY(-3px)}.case h3{text-transform:uppercase;margin:0 0 4px;font-family:Oswald,sans-serif;font-size:21px;font-weight:500}.case__year{color:var(--ink-dim);margin:0 0 20px;font-size:14px}.case__facts{gap:10px;margin:0;display:grid}.case__facts>div{border-top:1px solid var(--line);justify-content:space-between;align-items:baseline;gap:16px;padding-top:10px;display:flex}.case__facts dt{color:var(--ink-dim);font-size:13px}.case__facts dd{font-variant-numeric:tabular-nums;margin:0;font-size:15px}.case__gain{color:var(--accent);font-weight:500}.calc{border:1px solid var(--line);background:#101315;max-width:720px;padding:clamp(22px,3vw,34px)}.calc__budget{flex-wrap:wrap;gap:8px;margin-bottom:26px;display:flex}.chip{font:inherit;color:var(--ink-dim);border:1px solid var(--line);cursor:pointer;background:0 0;padding:9px 18px;font-size:14px;transition:color .2s,border-color .2s,background .2s}.chip:hover{color:var(--ink);border-color:var(--ink-dim)}.chip.is-active{background:var(--accent);border-color:var(--accent);color:#fff}.calc__rows{gap:12px;margin:0;display:grid}.calc__rows>div{border-bottom:1px solid var(--line);justify-content:space-between;align-items:baseline;gap:20px;padding-bottom:12px;display:flex}.calc__rows dt{color:var(--ink-dim);font-size:15px}.calc__rows dd{font-variant-numeric:tabular-nums;white-space:nowrap;margin:0;font-size:16px}.calc__total{border-bottom:none;padding-top:6px}.calc__total dt{color:var(--ink);font-weight:500}.calc__total dd{font-family:Oswald,sans-serif;font-size:clamp(22px,2.6vw,28px)}.calc__note{color:var(--ink-dim);margin:20px 0 0;font-size:13px;line-height:1.55}.faq details{border-top:1px solid var(--line)}.faq details:last-child{border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;padding:20px 40px 20px 0;font-size:17px;font-weight:500;list-style:none;transition:color .2s;position:relative}.faq summary::-webkit-details-marker{display:none}.faq summary:hover{color:var(--accent)}.faq summary:after{content:"";border-right:1.5px solid var(--ink-dim);border-bottom:1.5px solid var(--ink-dim);width:11px;height:11px;transition:transform .25s;position:absolute;top:50%;right:6px;transform:translateY(-70%)rotate(45deg)}.faq details[open] summary:after{transform:translateY(-30%)rotate(-135deg)}.faq p{color:var(--ink-dim);max-width:68ch;margin:0 0 22px;padding-right:40px;line-height:1.65}.form{grid-template-columns:1fr 1fr;gap:18px;display:grid}.field{flex-direction:column;gap:8px;display:flex}.field--wide,.agree,.form .btn,.form__note{grid-column:1/-1}.field label{color:var(--ink-dim);font-size:14px}.field input{font:inherit;color:var(--ink);border:1px solid var(--line);background:#0c0e10;border-radius:2px;padding:14px 16px;transition:border-color .2s}.field input::placeholder{color:#5f666a}.field input:focus{border-color:var(--accent);outline:none}.agree{color:var(--ink-dim);cursor:pointer;align-items:flex-start;gap:10px;font-size:14px;display:flex}.agree input{accent-color:var(--accent);width:16px;height:16px;margin:2px 0 0}.form .btn{justify-self:start}.form__note{color:var(--ink-dim);margin:0;font-size:13px}.footer{border-top:1px solid var(--line);padding:40px clamp(20px,5vw,64px)}.footer__inner{flex-wrap:wrap;align-items:baseline;gap:12px 28px;display:flex}.footer p{color:var(--ink-dim);margin:0;font-size:14px}.footer__legal{margin-left:auto}.toast{z-index:20;border:1px solid var(--line);background:#14181a;max-width:min(92vw,420px);padding:20px 24px;position:fixed;bottom:28px;left:50%;transform:translate(-50%);box-shadow:0 20px 60px -30px #000}.toast b{text-transform:uppercase;margin-bottom:6px;font-family:Oswald,sans-serif;font-size:18px;font-weight:500;display:block}.toast p{color:var(--ink-dim);margin:0 0 14px;font-size:14px;line-height:1.5}.toast button{font:inherit;background:var(--accent);color:#fff;cursor:pointer;border:none;padding:9px 20px;font-size:14px}@media (width<=700px){.step{grid-template-columns:56px 1fr;gap:14px}.form{grid-template-columns:1fr}.form .btn{justify-self:stretch}.footer__legal{margin-left:0}}
+/*$vite$:1*/</style>
+  </head>
+  <body>
+    <main class="hero" id="hero">
+      <div class="hero__media">
+        <video
+          class="hero__video"
+          id="intro"
+          src="./media/car-drive-away.mp4"
+          poster="./media/poster.jpg"
+          muted
+          playsinline
+          preload="auto"
+        ></video>
+      </div>
+
+      <header class="bar">
+        <span class="mark">ПЕРЕГОН</span>
+        <nav class="nav">
+          <a href="#how">Как это работает</a>
+          <a href="#cases">Машины</a>
+          <a href="#calc">Расчёт</a>
+          <a href="#contact">Заявка</a>
+        </nav>
+        <button class="skip" id="skip" type="button">Пропустить</button>
+      </header>
+
+      <div class="hero__content">
+        <h1>Ваша машина уже стоит на аукционе в США</h1>
+        <p class="hero__sub">
+          Выкупаем на Copart и IAAI, доставляем, растаможиваем. Полную смету
+          показываем до торгов — конечную цену в рублях вы знаете заранее.
+        </p>
+        <div class="hero__actions">
+          <a class="btn" href="#calc">Рассчитать стоимость</a>
+          <a class="btn btn--ghost" href="#how">Как проходит сделка</a>
+        </div>
+      </div>
+
+      <div class="hero__facts">
+        <div><b>45–60</b><span>дней от торгов до вашего города</span></div>
+        <div><b>Фикс</b><span>смета до ставки, без доплат по дороге</span></div>
+        <div><b>Отчёт</b><span>состояние лота до того, как вы решите</span></div>
+      </div>
+    </main>
+
+    <!-- ---------- как проходит сделка ---------- -->
+    <section class="section" id="how">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Как проходит сделка</p>
+          <h2>Восемь недель от заявки до ключей</h2>
+          <p class="head__sub">
+            Каждый этап заканчивается вашим решением. Без него мы дальше не идём.
+          </p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <div>
+              <p class="step__when">Неделя 1</p>
+              <h3>Подбор лотов</h3>
+              <p>
+                Смотрим торги Copart и IAAI под ваш бюджет. Присылаем 3–5 машин
+                с ценой, отчётом Carfax и фотографиями с площадки. Вы говорите,
+                по каким идём в торги.
+              </p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <div>
+              <p class="step__when">Недели 1–2</p>
+              <h3>Торги и осмотр</h3>
+              <p>
+                Ставку делаем только с вашего согласия и не выше согласованного
+                потолка. После выигрыша наш человек в США осматривает машину
+                вживую и снимает видео — до отправки, а не после.
+              </p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <div>
+              <p class="step__when">Недели 3–7</p>
+              <h3>Доставка</h3>
+              <p>
+                Контейнер из американского порта до Владивостока. На каждом
+                этапе пишем статус: погрузка, отход судна, приход, выгрузка.
+                Не нужно спрашивать, где машина.
+              </p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <div>
+              <p class="step__when">Неделя 8</p>
+              <h3>Документы и ключи</h3>
+              <p>
+                Таможня, СБКТС, постановка на учёт. Забираете машину во
+                Владивостоке или отправляем автовозом в ваш город.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ---------- что берём на себя ---------- -->
+    <section class="section section--tint" id="safe">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Ваши деньги</p>
+          <h2>Что зафиксировано до того, как вы заплатите</h2>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Договор до начала работы</h3>
+            <p>
+              Суммы, сроки и потолок ставки прописаны на бумаге. Смета не
+              меняется по дороге — если вырастет фрахт, это наша забота.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Поэтапная оплата</h3>
+            <p>
+              Платите за этап, который уже сделан. Сначала лот — мы показываем
+              выигранную машину, и только потом идёт оплата доставки.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Carfax и видеоосмотр</h3>
+            <p>
+              По каждому лоту — полная история и живое видео с площадки
+              до ставки. Решение о покупке принимаете вы, видя машину.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Статус на каждом этапе</h3>
+            <p>
+              Пишем сами, когда что-то произошло: выиграли, погрузили, судно
+              вышло, машина на таможне. Не нужно напоминать о себе.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- привезённые машины ---------- -->
+    <section class="section" id="cases">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Привезли</p>
+          <h2>Машины, которые уже ездят</h2>
+          <p class="head__sub">
+            Экономия считается от цены аналогичной машины на российском рынке
+            на день покупки.
+          </p>
+        </header>
+
+        <div class="cases">
+          <article class="case reveal">
+            <h3>Dodge Durango R/T</h3>
+            <p class="case__year">2021 · 5.7 V8</p>
+            <dl class="case__facts">
+              <div><dt>Город</dt><dd>Москва</dd></div>
+              <div><dt>Срок</dt><dd>54 дня</dd></div>
+              <div><dt>Выгода</dt><dd class="case__gain">2,4 млн ₽</dd></div>
+            </dl>
+          </article>
+          <article class="case reveal">
+            <h3>Ford F-150 Raptor</h3>
+            <p class="case__year">2022 · 3.5 EcoBoost</p>
+            <dl class="case__facts">
+              <div><dt>Город</dt><dd>Екатеринбург</dd></div>
+              <div><dt>Срок</dt><dd>61 день</dd></div>
+              <div><dt>Выгода</dt><dd class="case__gain">3,1 млн ₽</dd></div>
+            </dl>
+          </article>
+          <article class="case reveal">
+            <h3>Cadillac Escalade</h3>
+            <p class="case__year">2020 · 6.2 V8</p>
+            <dl class="case__facts">
+              <div><dt>Город</dt><dd>Краснодар</dd></div>
+              <div><dt>Срок</dt><dd>58 дней</dd></div>
+              <div><dt>Выгода</dt><dd class="case__gain">1,9 млн ₽</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- калькулятор ---------- -->
+    <section class="section section--tint" id="calc">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Прикидка</p>
+          <h2>Во что примерно обойдётся</h2>
+          <p class="head__sub">
+            Выберите бюджет под ключ — покажем, как он делится. Точную смету
+            считаем по конкретному лоту до торгов.
+          </p>
+        </header>
+
+        <div class="calc reveal">
+          <div class="calc__budget" role="group" aria-label="Бюджет под ключ">
+            <button class="chip is-active" type="button" data-budget="2000000">2 млн ₽</button>
+            <button class="chip" type="button" data-budget="3000000">3 млн ₽</button>
+            <button class="chip" type="button" data-budget="5000000">5 млн ₽</button>
+            <button class="chip" type="button" data-budget="8000000">8 млн ₽</button>
+            <button class="chip" type="button" data-budget="12000000">12 млн ₽</button>
+          </div>
+
+          <dl class="calc__rows">
+            <div><dt>Лот на аукционе</dt><dd data-row="lot">—</dd></div>
+            <div><dt>Доставка морем и по России</dt><dd data-row="ship">—</dd></div>
+            <div><dt>Таможня и оформление</dt><dd data-row="customs">—</dd></div>
+            <div><dt>Наша работа</dt><dd data-row="fee">—</dd></div>
+            <div class="calc__total"><dt>Итого под ключ</dt><dd data-row="total">—</dd></div>
+          </dl>
+
+          <p class="calc__note">
+            Расчёт предварительный. Доля таможни зависит от объёма двигателя
+            и возраста машины, поэтому финальная цифра считается по лоту.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- вопросы ---------- -->
+    <section class="section" id="faq">
+      <div class="wrap wrap--narrow">
+        <header class="head reveal">
+          <p class="eyebrow">Вопросы</p>
+          <h2>О чём спрашивают до сделки</h2>
+        </header>
+
+        <div class="faq">
+          <details class="reveal">
+            <summary>Не привезёте утопленника или битую машину?</summary>
+            <p>
+              Работаем только с Copart и IAAI — там у каждого лота открытая
+              история и фотографии повреждений. До ставки наш человек в США
+              осматривает машину лично и снимает видео. Если состояние хуже
+              заявленного, в торги не идём.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>Переведу деньги — и вы пропадёте?</summary>
+            <p>
+              Договор подписывается до начала работы, оплата идёт по этапам.
+              Первый платёж — только за лот, и мы сразу показываем выигранную
+              машину с номером лота. Дальше платите за доставку, потом
+              за оформление.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>Растаможку я разбираю сам?</summary>
+            <p>
+              Нет. Таможенное оформление, СБКТС, ОТТС и постановку на учёт берём
+              на себя. Вы получаете машину с документами и номерами.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>Где потом чинить и брать запчасти?</summary>
+            <p>
+              Отговариваем от редких моделей, по которым в России нет запчастей.
+              Берём то, что обслуживается: популярные американские моторы,
+              распространённые кузова, живой рынок контрактных деталей.
+            </p>
+          </details>
+          <details class="reveal">
+            <summary>А если машина не пройдёт таможню?</summary>
+            <p>
+              До ставки проверяем лот на запреты и ограничения: год, экологический
+              класс, статус в базе. Машины, которые нельзя оформить, отсеиваются
+              на этапе подбора.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- заявка ---------- -->
+    <section class="section section--tint" id="contact">
+      <div class="wrap wrap--narrow">
+        <header class="head reveal">
+          <p class="eyebrow">Заявка</p>
+          <h2>Пришлём расчёт по вашей машине</h2>
+          <p class="head__sub">
+            Напишите модель, год и бюджет — вернёмся с подборкой лотов
+            и полной сметой.
+          </p>
+        </header>
+
+        <form class="form reveal" id="lead" novalidate>
+          <div class="field">
+            <label for="name">Как к вам обращаться</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="contact-value">Телефон или Telegram</label>
+            <input
+              id="contact-value"
+              name="contact"
+              type="text"
+              autocomplete="tel"
+              required
+            />
+          </div>
+          <div class="field field--wide">
+            <label for="car">Что ищете</label>
+            <input
+              id="car"
+              name="car"
+              type="text"
+              placeholder="Например: Ford F-150, 2021–2023, до 6 млн ₽"
+            />
+          </div>
+
+          <label class="agree">
+            <input type="checkbox" name="agree" required />
+            <span>Согласен на обработку персональных данных</span>
+          </label>
+
+          <button class="btn" type="submit">Отправить заявку</button>
+          <p class="form__note">
+            Без звонков без вашего согласия. Отвечаем в течение часа
+            в рабочее время.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <span class="mark">ПЕРЕГОН</span>
+        <p>Авто с аукционов США · Copart и IAAI</p>
+        <p class="footer__legal">© 2026</p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" hidden>
+      <b>Заявка принята</b>
+      <p>Свяжемся с вами в течение часа в рабочее время.</p>
+      <button type="button" id="toast-close">Хорошо</button>
+    </div>
+
+  </body>
+</html>
